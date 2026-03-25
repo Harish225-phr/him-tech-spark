@@ -51,21 +51,30 @@ const Footer = () => {
               <p>harish.pariihar@gmail.com</p>
             </div>
             <div className="mt-4 flex gap-3">
-              {[
-                { Icon: Linkedin, href: "#" },
-                { Icon: Instagram, href: "#" },
-                { Icon: Github, href: "#" },
-              ].map(({ Icon, href }, i) => (
-                <a
-                  key={i}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
-                >
-                  <Icon size={16} />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/in/harish-parihar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                <Linkedin size={16} />
+              </a>
+              <a
+                href="https://www.instagram.com/harish.phr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                <Instagram size={16} />
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                <Github size={16} />
+              </a>
             </div>
           </div>
         </div>
