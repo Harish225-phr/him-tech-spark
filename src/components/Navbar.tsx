@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoHorizontal from "@/assets/logo-horizontal.png";
+import logoIcon from "@/assets/logo-icon.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -35,13 +37,17 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-btn text-sm font-bold">
-            TH
-          </div>
-          <span className="font-display text-lg font-bold text-foreground">
-            Tech<span className="gradient-text">Him</span>
-          </span>
+        <Link to="/" className="flex items-center">
+          <img
+            src={logoHorizontal}
+            alt="TechHim Solutions"
+            className="hidden md:block h-10 w-auto"
+          />
+          <img
+            src={logoIcon}
+            alt="TechHim Solutions"
+            className="block md:hidden h-9 w-9 rounded-lg object-contain"
+          />
         </Link>
 
         {/* Desktop nav */}

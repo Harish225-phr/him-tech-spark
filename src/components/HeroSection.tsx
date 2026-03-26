@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Code2, Globe, Cpu, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoVertical from "@/assets/logo-vertical.png";
 
 const floatingIcons = [
   { Icon: Code2, className: "top-[20%] left-[10%] floating", delay: 0 },
@@ -44,6 +45,15 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
+            className="mb-6 flex justify-center"
+          >
+            <img src={logoVertical} alt="TechHim Solutions" className="h-28 w-auto md:h-36" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
           >
             <span className="mb-4 inline-block rounded-full border border-primary/30 px-4 py-1.5 text-xs font-medium text-primary">
               🚀 Welcome to TechHim Solutions

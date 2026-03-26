@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Instagram } from "lucide-react";
+import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const Footer = () => {
   return (
@@ -8,13 +9,12 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <Link to="/" className="mb-4 flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-btn text-sm font-bold">
-                TH
-              </div>
-              <span className="font-display text-lg font-bold text-foreground">
-                Tech<span className="gradient-text">Him</span>
-              </span>
+            <Link to="/" className="mb-4 inline-block">
+              <img
+                src={logoHorizontal}
+                alt="TechHim Solutions"
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="text-sm leading-relaxed text-muted-foreground">
               Building powerful digital solutions for modern businesses.

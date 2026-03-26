@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Target, Eye } from "lucide-react";
 import founderImg from "@/assets/founder.png";
+import logoMain from "@/assets/logo-main.png";
 
 const AboutSection = () => {
   return (
@@ -14,6 +15,9 @@ const AboutSection = () => {
           className="mb-20"
         >
           <div className="mb-16 text-center">
+            <div className="mb-4 flex justify-center">
+              <img src={logoMain} alt="TechHim Solutions" className="h-16 w-auto md:h-20" />
+            </div>
             <span className="mb-2 inline-block text-sm font-semibold text-primary">Who We Are</span>
             <h2 className="font-display text-3xl font-bold md:text-5xl">
               About <span className="gradient-text">TechHim Solutions</span>
