@@ -51,6 +51,16 @@ const AboutSection = () => {
                   With expertise in both frontend and backend technologies, Harish has worked on dashboards, automation tools
                   and business systems. TechHim Solutions was created to help businesses grow using technology.
                 </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {["React", "Node.js", "Python", "MongoDB", "TypeScript", "Tailwind CSS", "PostgreSQL", "Next.js", "Express", "Firebase"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
