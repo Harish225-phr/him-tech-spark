@@ -3,7 +3,7 @@ import { Target, Eye } from "lucide-react";
 import founderImg from "@/assets/founder.png";
 import sahilImg from "@/assets/sahil-sharma.webp";
 import logoMain from "@/assets/logo-main.png";
-import ramanThakur from "@/assets/raman-thakur.png";
+import ramanThakur from "@/assets/Raman-Thakur.png";
 
 const AboutSection = () => {
   return (
@@ -88,7 +88,7 @@ const AboutSection = () => {
                   loading="lazy"
                   width={192}
                   height={192}
-                  />
+                  />  
                 </div>
               </motion.div>
               <div>
