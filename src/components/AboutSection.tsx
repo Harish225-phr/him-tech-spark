@@ -4,6 +4,7 @@ import founderImg from "@/assets/founder.png";
 import sahilImg from "@/assets/sahil-sharma.webp";
 import logoMain from "@/assets/logo-main.png";
 import ramanThakur from "@/assets/Raman-Thakur.png";
+import simranRajput from "@/assets/simran-rajput.png";
 
 const AboutSection = () => {
   return (
