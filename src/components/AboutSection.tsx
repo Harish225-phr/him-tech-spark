@@ -133,7 +133,7 @@ const AboutSection = () => {
               </motion.div>
               <div>
                 <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Sahil Sharma</h3>
-                <span className="mb-4 inline-block text-sm font-medium text-primary">Sales Manager Expert</span>
+                <span className="mb-4 inline-block text-sm font-medium text-primary">Sales Head</span>
                 <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
                   Sahil Sharma is our dedicated Sales Manager who specializes in understanding client needs 
                   and delivering tailored technology solutions. With strong communication skills and deep market 
