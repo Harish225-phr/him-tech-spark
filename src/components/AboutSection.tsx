@@ -5,6 +5,7 @@ import sahilImg from "@/assets/sahil-sharma.webp";
 import logoMain from "@/assets/logo-main.png";
 import ramanThakur from "@/assets/Raman-Thakur.png";
 import simranRajput from "@/assets/simran-rajput.png";
+import abhinavImg from "@/assets/abhinav.png";
 
 const AboutSection = () => {
   return (
@@ -192,6 +193,44 @@ const AboutSection = () => {
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   Her ability to connect businesses with the right technology solutions has been instrumental
                   in helping TechHim Solutions build a growing network of satisfied clients across diverse industries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Abhinav */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <div className="glass-card glow-border mx-auto max-w-4xl rounded-3xl p-8 md:p-12">
+            <div className="flex flex-col items-center gap-8 md:flex-row">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="h-48 w-48 flex-shrink-0 overflow-hidden rounded-2xl border-2 border-primary/30"
+              >
+                <img
+                  src={abhinavImg}
+                  alt="Abhinav - Team Lead & Full Stack Developer at TechHim Solutions"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  width={192}
+                  height={192}
+                />
+              </motion.div>
+              <div>
+                <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Abhinav</h3>
+                <span className="mb-4 inline-block text-sm font-medium text-primary">Team Lead & Full Stack Developer</span>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Abhinav is a skilled Team Lead and Full Stack Developer at TechHim Solutions, responsible for
+                  guiding development teams and delivering high-quality web applications from concept to deployment.
+                </p>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  With strong expertise across frontend and backend technologies, he ensures clean architecture,
+                  efficient code, and smooth project execution — making him a key pillar of TechHim's engineering team.
                 </p>
               </div>
             </div>
