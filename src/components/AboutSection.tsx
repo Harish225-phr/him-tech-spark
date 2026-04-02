@@ -5,6 +5,7 @@ import sahilImg from "@/assets/sahil-sharma.webp";
 import logoMain from "@/assets/logo-main.png";
 import ramanThakur from "@/assets/Raman-Thakur.png";
 import simranRajput from "@/assets/simran-rajput.png";
+import abhinavImg from "@/assets/abhinav.png";
 
 const AboutSection = () => {
   return (
