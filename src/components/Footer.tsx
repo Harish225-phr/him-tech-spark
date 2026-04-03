@@ -53,6 +53,7 @@ const Footer = () => {
               <p>Phone: 7589951677, 8360303621</p>
               <p>tech.himtech@gmail.com</p>
               <p>harish.pariihar@gmail.com</p>
+              <p>Office No. 8, #620, Motiaz Royal Business Park, Zirakpur, Punjab 140603</p>
             </div>
             <div className="mt-4 flex gap-3">
               <a

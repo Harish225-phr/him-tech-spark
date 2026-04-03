@@ -68,7 +68,7 @@ const ContactSection = () => {
                 <MapPin className="h-5 w-5 text-primary" />
                 <h3 className="font-display text-lg font-semibold text-foreground">Location</h3>
               </div>
-              <p className="text-sm text-muted-foreground">India</p>
+              <p className="text-sm text-muted-foreground">Office No. 8, #620, Motiaz Royal Business Park, Zirakpur, Punjab 140603</p>
             </div>
 
             {/* Map placeholder */}
