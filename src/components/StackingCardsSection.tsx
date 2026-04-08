@@ -166,7 +166,7 @@ const StackingCardsSection = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col gap-8 px-2 md:px-8">
+      <div className="flex flex-col gap-6 px-2 md:px-4">
         {cards.map((card, i) => (
           <StackCard
             key={card.title}
