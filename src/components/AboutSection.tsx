@@ -45,25 +45,11 @@ const AboutSection = () => {
               </motion.div>
               <div>
                 <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Harish Parihar</h3>
-                <span className="mb-4 inline-block text-sm font-medium text-primary">Founder & Full Stack Developer</span>
-                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                  TechHim Solutions was founded by Harish Parihar, a passionate full stack developer
-                  and technology enthusiast dedicated to building powerful digital solutions for businesses.
-                </p>
+                <span className="mb-4 inline-block text-sm font-medium text-primary">Founder</span>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  With expertise in both frontend and backend technologies, Harish has worked on dashboards, automation tools
-                  and business systems. TechHim Solutions was created to help businesses grow using technology.
+                  Harish Parihar, originally from Himachal Pradesh, is the founder of TechHim Solutions. 
+                  He started this company with a vision to help businesses grow through technology and digital innovation.
                 </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {["React", "Node.js", "Python", "MongoDB", "TypeScript", "Tailwind CSS", "PostgreSQL", "Next.js", "Express", "Firebase"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
