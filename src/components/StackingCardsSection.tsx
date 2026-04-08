@@ -69,10 +69,16 @@ const StackCard = ({
   const Icon = card.icon;
 
   return (
-    <div ref={cardRef} className="sticky top-24 h-[80vh] md:h-[85vh]" style={{ zIndex: index + 1 }}>
+    <div ref={cardRef} className="sticky top-16 h-[85vh] md:h-[90vh]" style={{ zIndex: index + 1 }}>
       <motion.div
         style={{ scale }}
-        className="relative mx-auto h-full max-w-6xl overflow-hidden rounded-3xl border border-border/50"
+        className="relative mx-auto h-full max-w-7xl overflow-hidden rounded-3xl border-2 transition-shadow duration-500"
+        initial={false}
+        whileInView={{
+          boxShadow: `0 0 40px ${card.accentColor.replace(')', ' / 0.25)')}, 0 0 80px ${card.accentColor.replace(')', ' / 0.1)')}, inset 0 0 60px ${card.accentColor.replace(')', ' / 0.05)')}`,
+          borderColor: card.accentColor.replace(')', ' / 0.5)'),
+        }}
+        viewport={{ once: false, amount: 0.5 }}
       >
         {/* Background image */}
         <div className="absolute inset-0">
@@ -84,41 +90,50 @@ const StackCard = ({
             width={1280}
             height={720}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/50" />
+          {/* Top & bottom edge glow */}
+          <div
+            className="absolute inset-x-0 top-0 h-1 opacity-60"
+            style={{ background: `linear-gradient(90deg, transparent, ${card.accentColor}, transparent)` }}
+          />
+          <div
+            className="absolute inset-x-0 bottom-0 h-1 opacity-40"
+            style={{ background: `linear-gradient(90deg, transparent, ${card.accentColor}, transparent)` }}
+          />
         </div>
 
         {/* Content */}
-        <div className="relative flex h-full flex-col justify-center px-8 md:px-16 lg:px-20">
-          <div className="max-w-xl">
+        <div className="relative flex h-full flex-col justify-center px-8 md:px-16 lg:px-24">
+          <div className="max-w-2xl">
             {/* Icon badge */}
             <div
-              className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl"
-              style={{ background: card.color }}
+              className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border"
+              style={{ background: card.color, borderColor: card.accentColor.replace(')', ' / 0.4)') }}
             >
-              <Icon className="h-7 w-7" style={{ color: card.accentColor }} />
+              <Icon className="h-8 w-8" style={{ color: card.accentColor }} />
             </div>
 
             {/* Number */}
             <span
-              className="mb-3 block font-display text-sm font-bold tracking-widest uppercase"
+              className="mb-4 block font-display text-sm font-bold tracking-[0.3em] uppercase"
               style={{ color: card.accentColor }}
             >
               0{index + 1} / 0{totalCards}
             </span>
 
             {/* Title */}
-            <h3 className="mb-5 font-display text-3xl font-bold text-foreground md:text-5xl lg:text-6xl">
+            <h3 className="mb-6 font-display text-4xl font-bold text-foreground md:text-5xl lg:text-7xl">
               {card.title}
             </h3>
 
             {/* Description */}
-            <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="text-base leading-relaxed text-muted-foreground md:text-lg lg:text-xl">
               {card.description}
             </p>
 
             {/* Decorative line */}
             <div
-              className="mt-8 h-1 w-20 rounded-full"
+              className="mt-10 h-1.5 w-24 rounded-full"
               style={{ background: card.accentColor }}
             />
           </div>
