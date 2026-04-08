@@ -7,6 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import ProcessSection from "@/components/ProcessSection";
 import IndustriesSection from "@/components/IndustriesSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
+import StackingCardsSection from "@/components/StackingCardsSection";
 import TechStackSection from "@/components/TechStackSection";
 import NumbersSection from "@/components/NumbersSection";
 import AchievementsSection from "@/components/AchievementsSection";
