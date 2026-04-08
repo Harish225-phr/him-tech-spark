@@ -46,9 +46,15 @@ const AboutSection = () => {
               <div>
                 <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Harish Parihar</h3>
                 <span className="mb-4 inline-block text-sm font-medium text-primary">Founder</span>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Harish Parihar, originally from the beautiful hills of Himachal Pradesh, is the founder of TechHim Solutions. 
+                  With a deep passion for technology and innovation, he started this company with a clear vision — to help 
+                  businesses of all sizes grow and succeed through powerful digital solutions.
+                </p>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Harish Parihar, originally from Himachal Pradesh, is the founder of TechHim Solutions. 
-                  He started this company with a vision to help businesses grow through technology and digital innovation.
+                  Under his leadership, TechHim Solutions has delivered impactful projects across web development, 
+                  automation, and business systems. Harish believes in building long-term partnerships with clients 
+                  and delivering solutions that truly make a difference in their growth journey.
                 </p>
               </div>
             </div>
