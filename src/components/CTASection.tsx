@@ -36,7 +36,7 @@ const CTASection = () => {
                 Start Your Project <ArrowRight size={16} />
               </Link>
               <a
-                href="https://wa.me/918360303621?text=Hi%20TechHim%20Solutions%2C%20I%20want%20to%20discuss%20a%20project."
+                href="https://wa.me/8278771093?text=Hi%20TechHim%20Solutions%2C%20I%20want%20to%20discuss%20a%20project."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card flex items-center gap-2 rounded-lg px-8 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/50"

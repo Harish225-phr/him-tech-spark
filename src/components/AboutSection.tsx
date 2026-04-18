@@ -136,7 +136,7 @@ const AboutSection = () => {
                   build lasting partnerships with businesses across India.
                 </p>
                 <a
-                  href="https://wa.me/918360303621?text=Hi%20Sahil%2C%20I%20want%20to%20know%20more%20about%20TechHim%20Solutions%20services."
+                  href="https://wa.me/8278771093?text=Hi%20Sahil%2C%20I%20want%20to%20know%20more%20about%20TechHim%20Solutions%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-transform hover:scale-105"
