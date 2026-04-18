@@ -71,12 +71,17 @@ const ContactSection = () => {
               <p className="text-sm text-muted-foreground">Office No. 8, #620, Motiaz Royal Business Park, Zirakpur, Punjab 140603</p>
             </div>
 
-            {/* Map placeholder */}
+            {/* Map */}
             <div className="glass-card glow-border overflow-hidden rounded-2xl">
-              <div className="flex h-48 items-center justify-center bg-secondary">
-                <MapPin className="mr-2 h-6 w-6 text-primary" />
-                <span className="text-sm text-muted-foreground">Google Map Integration</span>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3420.5547733234606!2d76.80189!3d30.63917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fb0d26ef4a501%3A0x1234567890!2sMotiaz%20Royal%20Business%20Park!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </motion.div>
 
