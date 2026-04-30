@@ -4,6 +4,7 @@ import founderImg from "@/assets/founder.png";
 import sahilImg from "@/assets/sahil-sharma.webp";
 import logoMain from "@/assets/logo-main.png";
 import ramanThakur from "@/assets/Raman-Thakur.png";
+import mehak from "@/assets/mehak.jpg";
 
 import abhinavImg from "@/assets/abhinav.png";
 
@@ -186,6 +187,41 @@ const AboutSection = () => {
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   With strong expertise across frontend and backend technologies, he ensures clean architecture,
                   efficient code, and smooth project execution — making him a key pillar of TechHim's engineering team.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+           <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <div className="glass-card glow-border mx-auto max-w-4xl rounded-3xl p-8 md:p-12">
+            <div className="flex flex-col items-center gap-8 md:flex-row">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="h-48 w-48 flex-shrink-0 overflow-hidden rounded-2xl border-2 border-primary/30"
+              >
+                <img
+                  src={mehak}
+                  alt="Abhinav - Team Lead & Full Stack Developer at TechHim Solutions"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  width={192}
+                  height={192}
+                />
+              </motion.div>
+              <div>
+                <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Mehak Sharma</h3>
+                <span className="mb-4 inline-block text-sm font-medium text-primary">Social Media Manager</span>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Mehak is a creative Social Media Manager at TechHim Solutions, responsible for crafting engaging content and building strong online communities.
+                </p>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  With a keen eye for trends and a passion for storytelling, she helps TechHim connect with audiences across platforms, amplifying our brand presence and fostering meaningful interactions.
                 </p>
               </div>
             </div>
